@@ -1,0 +1,1 @@
+Aby zainstalować skrypt należy na folderze docelowym wpisać komende npm init. W następnym kroku należy zainstalować Dart-Sass --save-dev sass Po zainstalowaniu pakietów zamienić defaultowy package.json na ten z repozytorium. Aby uruchomić skrypt należy wpisać komende npm run compile:sass.

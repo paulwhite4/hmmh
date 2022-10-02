@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+$text-color:#37474F;
+$hover-color:#EEC536;
+$main-color: #000000;
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    @media(min-width:73.125rem){
+        max-width: 73.125rem;
+    }
+}
+.navbar{
+    margin: 3.125rem 0;
+    &__list{
+        display: flex;
+        @media(max-width:30.5rem){
+            display: block;
+        }
+    }
+    &__item{
+        margin-right: 4.75rem;
+        list-style-type: none;
+        @media(max-width:40.625rem){
+            margin-right: 2.75rem;
+        }
+        @media(max-width:30.5rem){
+            margin-bottom: 0.75rem;
+        }
+    }
+    &__btn{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        color: $main-color;
+        &--active{
+            background-color: $hover-color;
+            padding: 5px;
+        }
+    }
+}
+.content-container{
+    @media(min-width:49.25rem){
+        display: grid;
+        grid-template-columns: repeat(2,calc(50% - 0.75rem));
+        -webkit-column-gap: 1.5rem;
+        -moz-column-gap: 1.5rem;
+        column-gap: 1.5rem;
+    }
+}
+.card{
+    &__wrapper{
+        padding: 2.5rem;
+    }
+    &__link{
+        font-size: 14px;
+        font-weight: 700;
+        color: #37474F;
+        text-decoration-line: underline;
+        text-decoration-color: $hover-color;
+        text-decoration-thickness: 0.4rem;
+        transition: 0.3s ease-out;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__type{
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-color;
+        text-transform: capitalize;
+    }
+    &__image{
+        width: 100%;
+    }
+}
+.hide{
+    display: none;
+}
